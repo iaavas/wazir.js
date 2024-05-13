@@ -40,7 +40,7 @@ export class GameManager {
         );
 
         if (game) {
-          game.makeMove(socket, message.move);
+          game.makeMove(socket, message.payload.move);
         }
       }
     });
